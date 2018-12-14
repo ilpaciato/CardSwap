@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UEh-eD-KsE">
+            <objects>
+                <viewController id="oyU-tO-xdF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qvq-9I-zvn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNj-hg-6kd">
+                                <rect key="frame" x="30" y="180" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HK-k7-7tq">
+                                <rect key="frame" x="30" y="476.5" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-k0-RL1">
+                                <rect key="frame" x="15" y="289.5" width="345" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lc-Xi-Lin">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="150"/>
+                                        <state key="normal" backgroundImage="iphone_placca_verde"/>
+                                        <connections>
+                                            <action selector="iphoneButtonPressed:" destination="wBK-Iw-A9j" eventType="touchUpInside" id="ROU-9d-onc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loF-gS-5VV">
+                                        <rect key="frame" x="180" y="0.0" width="165" height="150"/>
+                                        <state key="normal" backgroundImage="iwatch_placca_verde"/>
+                                        <connections>
+                                            <action selector="iwatchButtonPressed:" destination="wBK-Iw-A9j" eventType="touchUpInside" id="r1P-V7-A4A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8mW-YZ-BpY" firstAttribute="trailing" secondItem="YNj-hg-6kd" secondAttribute="trailing" constant="30" id="72q-Ni-oSB"/>
+                            <constraint firstItem="YNj-hg-6kd" firstAttribute="top" secondItem="8mW-YZ-BpY" secondAttribute="top" constant="160" id="Kqu-1p-0m2"/>
+                            <constraint firstItem="2HK-k7-7tq" firstAttribute="leading" secondItem="8mW-YZ-BpY" secondAttribute="leading" constant="30" id="R0w-t8-QMy"/>
+                            <constraint firstItem="YNj-hg-6kd" firstAttribute="leading" secondItem="8mW-YZ-BpY" secondAttribute="leading" constant="30" id="Sjn-Vq-dji"/>
+                            <constraint firstItem="8mW-YZ-BpY" firstAttribute="bottom" secondItem="2HK-k7-7tq" secondAttribute="bottom" constant="170" id="WNf-F7-sat"/>
+                            <constraint firstItem="nxL-k0-RL1" firstAttribute="centerX" secondItem="8mW-YZ-BpY" secondAttribute="centerX" id="Xyi-bA-2nb"/>
+                            <constraint firstItem="nxL-k0-RL1" firstAttribute="top" secondItem="YNj-hg-6kd" secondAttribute="bottom" constant="89" id="YRl-Oc-0wy"/>
+                            <constraint firstItem="8mW-YZ-BpY" firstAttribute="trailing" secondItem="2HK-k7-7tq" secondAttribute="trailing" constant="30" id="u5d-Zf-djk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8mW-YZ-BpY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nP7-TR-Fb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wBK-Iw-A9j" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="-181.25937031484258"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone_placca_verde" width="165" height="150"/>
+        <image name="iwatch_placca_verde" width="165" height="150"/>
+    </resources>
+</document>

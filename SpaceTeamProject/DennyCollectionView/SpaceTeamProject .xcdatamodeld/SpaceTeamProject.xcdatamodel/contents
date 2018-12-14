@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="familyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homePostalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instagram" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="otherEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workPlaceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workPostalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workStreet" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PersonTag" representedClassName="PersonTag" parentEntity="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="375"/>
+        <element name="PersonTag" positionX="-54" positionY="144" width="128" height="60"/>
+    </elements>
+</model>
